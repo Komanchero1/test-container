@@ -43,7 +43,7 @@ class ConditionalApplicationTests {
         String url = "http://localhost:" + mappedPort + "/";
         ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
         assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertEquals("Current profile is prod", response.getBody());
+        assertEquals("Current profile is production", response.getBody());
 
     }
 }
